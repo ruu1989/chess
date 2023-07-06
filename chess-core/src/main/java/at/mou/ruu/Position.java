@@ -35,4 +35,12 @@ public class Position {
     public void setY(int y) {
         this.y = y;
     }
+
+    public char getStringRepresentation() {
+        if (this.piece == null) {
+            return '.';
+        }
+
+        return this.piece.getStringRepresentation();
+    }
 }
