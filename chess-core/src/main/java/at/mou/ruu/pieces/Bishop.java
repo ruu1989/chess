@@ -2,14 +2,21 @@ package at.mou.ruu.pieces;
 
 import at.mou.ruu.Board;
 import at.mou.ruu.Position;
+import org.javatuples.Pair;
+
+import java.util.List;
 
 public class Bishop extends Piece {
     public Bishop(boolean isWhite) {
         super(isWhite);
     }
 
-    public boolean canMove(Board board, Position start, Position end) {
-        return false;
+    public List<Pair<Integer, Integer>> validMovements(Board board, Position start) throws Exception {
+        return null;
+    }
+
+    public MoveResult canMove(Board board, Position start, Position end) {
+        return MoveResult.EMPTY;
     }
 
     @Override

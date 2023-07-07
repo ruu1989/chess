@@ -11,7 +11,7 @@ public class PositionTest {
     public void positionInstantiatesCorrectly() {
         // Implicitly tests getters and setters via constructor
         Piece piece = Mockito.mock(Piece.class, Mockito.CALLS_REAL_METHODS);
-        Position p = new Position(1, 2, piece);
+        Position p = new Position(1, 2, piece, null);
         assertEquals(1, p.getX());
         assertEquals(2, p.getY());
         assertEquals(piece, p.getPiece());
